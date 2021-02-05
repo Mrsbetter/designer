@@ -1,0 +1,105 @@
+{
+    "title": "基本",
+    "icon": "payment",
+    "opened": false,
+    "items": [
+        {
+            "text": "Text",
+            "icon": "text.png",
+            "isFontIcon": false,
+            "info": {
+                "type": "text",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 100,
+                        "h": 30
+                    },
+                    "backColor": "rgba(0,0,0,0)",
+                    "foreColor": "rgba(255, 255, 255, 1)",
+                    "zIndex": 1,
+                    "transform": 0,
+                    "text": "Test",
+                    "textAlign": "center",
+                    "fontSize": 14,
+                    "fontFamily": "Arial"
+                }
+            }
+        },
+        {
+            "text": "Image",
+            "icon": "image.png",
+            "isFontIcon": false,
+            "info": {
+                "type": "image",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 200,
+                        "h": 200
+                    },
+                    "backColor": "rgba(0,0,0,0)",
+                    "zIndex": 1,
+                    "transform": 0,
+                    "url": ""
+                }
+            }
+        },
+        {
+            "text": "Table",
+            "icon": "table.png",
+            "isFontIcon": false,
+            "info": {
+                "type": "module-table",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 200,
+                        "h": 200
+                    },
+                    "backColor": "rgba(0,0,0,0)",
+                    "foreColor": "rgba(17, 205, 239, 0.3)",
+                    "borderColor": "",
+                    "borderStyle": "solid",
+                    "borderWidth": 0,
+                    "tableStyle": {
+                        "headerBg": "rgba(17, 205, 239, 0.8)",
+                        "textBg": "rgba(17, 205, 239, 0.4)",
+                        "textColor": "rgba(255, 255, 255, 0.7)",
+                        "borderWidth": 1,
+                        "borderStyle": "solid",
+                        "borderColor": "rgba(17, 205, 239, 1)",
+                        "oddLineBg": "rgba(17, 205, 239, 0)",
+                        "evenLineBg": "rgba(17, 205, 239, 0)"
+                    },
+                    "zIndex": 1,
+                    "transform": 0
+                }
+            }
+        }     
+    ]
+}

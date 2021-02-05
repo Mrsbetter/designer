@@ -1,0 +1,252 @@
+{
+    "title": "基本",
+    "icon": "payment",
+    "opened": false,
+    "items": [
+        {
+            "text": "Triangle",
+            "icon": "triangle.png",
+            "isFontIcon": false,
+            "info": {
+                "type": "triangle",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 200,
+                        "h": 200
+                    },
+                    "backColor": "rgba(0,0,0,0)",
+                    "foreColor": "rgba(17, 205, 239, 0.3)",
+                    "borderColor": "",
+                    "borderStyle": "solid",
+                    "borderWidth": 0,
+                    "shapeStyle": {
+                        "shapeBg": "rgba(17, 205, 239, 0.3)",
+                        "shapeBorderColor": "rgba(17, 205, 239, 0.8)",
+                        "shapeBorderStyle": "solid",
+                        "shapeBorderWidth": 2
+                    },
+                    "zIndex": 1,
+                    "transform": 0
+                }
+            }
+        },
+        {
+            "text": "Rect",
+            "icon": "rect.png",
+            "isFontIcon": false,
+            "info": {
+                "type": "rect",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 100,
+                        "h": 200
+                    },
+                    "backColor": "rgba(0,0,0,0)",
+                    "foreColor": "rgba(17, 205, 239, 0.3)",
+                    "borderColor": "",
+                    "borderStyle": "solid",
+                    "borderWidth": 0,
+                    "shapeStyle": {
+                        "shapeBg": "rgba(17, 205, 239, 0.3)",
+                        "shapeBorderColor": "rgba(17, 205, 239, 0.8)",
+                        "shapeBorderStyle": "solid",
+                        "shapeBorderWidth": 2
+                    },
+                    "zIndex": 1,
+                    "transform": 0,
+                    "radius": 0
+                }
+            }
+        },
+        {
+            "text": "Circular",
+            "icon": "circular.png",
+            "isFontIcon": false,
+            "info": {
+                "type": "circular",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 200,
+                        "h": 200
+                    },
+                    "backColor": "rgba(0,0,0,0)",
+                    "foreColor": "rgba(17, 205, 239, 0.3)",
+                    "borderColor": "",
+                    "borderStyle": "solid",
+                    "borderWidth": 0,
+                    "shapeStyle": {
+                        "shapeBg": "rgba(17, 205, 239, 0.3)",
+                        "shapeBorderColor": "rgba(17, 205, 239, 0.8)",
+                        "shapeBorderStyle": "solid",
+                        "shapeBorderWidth": 2
+                    },
+                    "zIndex": 1,
+                    "transform": 0
+                }
+            }
+        },
+        {
+            "text": "Line",
+            "icon": "line.png",
+            "isFontIcon": false,
+            "info": {
+                "type": "line",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 100,
+                        "y": 100,
+                        "w": 300,
+                        "h": 30
+                    },
+                    "backColor": "rgba(0,0,0,0)",
+                    "foreColor": "rgba(17, 205, 239, 1)",
+                    "zIndex": 1,
+                    "transform": 0,
+                    "baseLineStyle": {
+                        "lineWidth": 2,
+                        "lineStyle": "solid",
+                        "lineColor": "rgba(17, 205, 239, 1)"
+                    }
+                }
+            }
+        },
+        {
+            "text": "Line-Arrow",
+            "icon": "line-arrow.png",
+            "isFontIcon": false,
+            "info": {
+                "type": "line-arrow",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 100,
+                        "y": 100,
+                        "w": 300,
+                        "h": 80
+                    },
+                    "backColor": "rgba(0,0,0,0)",
+                    "foreColor": "rgba(17, 205, 239, 1)",
+                    "zIndex": 1,
+                    "transform": 0,
+                    "baseLineStyle": {
+                        "lineWidth": 2,
+                        "lineStyle": "solid",
+                        "lineColor": "rgba(17, 205, 239, 1)"
+                    },
+                    "points": [
+                        {
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "x": 0,
+                            "y": 80
+                        },
+                        {
+                            "x": 150,
+                            "y": 80
+                        },
+                        {
+                            "x": 150,
+                            "y": 40
+                        },
+                        {
+                            "x": 300,
+                            "y": 40
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "text": "贝塞尔曲线",
+            "icon": "bizier-curve-arrow.png",
+            "isFontIcon": false,
+            "info": {
+                "type": "bizier-curve-arrow",
+                "action": [],
+                "dataBind": {
+                    "sn": "",
+                    "title": "",
+                    "biz": "",
+                    "queryParam": {}
+                },
+                "style": {
+                    "position": {
+                        "x": 100,
+                        "y": 100,
+                        "w": 300,
+                        "h": 80
+                    },
+                    "backColor": "rgba(0,0,0,0)",
+                    "foreColor": "rgba(17, 205, 239, 1)",
+                    "zIndex": 1,
+                    "transform": 0,
+                    "baseLineStyle": {
+                        "lineWidth": 2,
+                        "lineStyle": "solid",
+                        "lineColor": "rgba(17, 205, 239, 1)"
+                    },
+                    "points": [
+                        {
+                            "x": 20,
+                            "y": 20
+                        },
+                        {
+                            "x": 20,
+                            "y": 100
+                        },
+                        {
+                            "x": 200,
+                            "y": 100
+                        },
+                        {
+                            "x": 200,
+                            "y": 20
+                        }
+                    ]
+                }
+            }
+        }        
+    ]
+}

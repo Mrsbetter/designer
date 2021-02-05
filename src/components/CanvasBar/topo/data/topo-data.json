@@ -1,0 +1,11 @@
+{
+  "name": "图层",
+  "layer": {
+    "backColor": "radial-gradient(circle, #302B63 0%, #0F0C29 100%)",
+    "backgroundImage": "",
+    "widthHeightRatio": "",
+    "width": 1920,
+    "height": 1080
+  },
+  "components": []
+}
