@@ -22,17 +22,11 @@
           </div>
         </div>
       </div>
-      <div class="component-library-items">
-        <div class="title">基础组件</div>
+      <div v-for="config in configs" :key="config.type" class="component-library-items">
+        <div class="title">{{ config.name }}</div>
         <div class="items-content">
-          <div class="items">
-            <div class="element">单行文本</div>
-          </div>
-          <div class="items">
-            <div class="element">多行文本</div>
-          </div>
-          <div class="items">
-            <div class="element">密码</div>
+          <div v-for="item in config.configs" :key="item.tag" class="items">
+            <div class="element">{{ item.__config__.label }}</div>
           </div>
         </div>
       </div>
@@ -49,6 +43,10 @@ export default {
     msg: {
       type: String,
       default: 'chart'
+    },
+    configs: {
+      type: Array,
+      default: () => []
     }
   },
   data() {

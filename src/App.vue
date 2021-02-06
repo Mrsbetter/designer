@@ -5,11 +5,11 @@
     </div>
     <div class="design-layout">
       <div class="design-left design-ft">
-        <SideBar ref="_sidebar" @set="onSetSideBar" />
+        <SideBar ref="_sidebar" :configs="configs" @set="onSetSideBar" />
       </div>
       <div :class="['design-center design-ft', {'hidden-active': hiddenStatus}]">
         <div class="design-canvas">
-          <CanvasBar ref="_canvasbar" :list="cavasList" @set="onSetCanvasBar" />
+          <Previewer ref="_canvasbar" :list="cavasList" @set="onSetCanvasBar" />
         </div>
         <div class="design-hidden">
           <HiddenBar ref="_hiddenbar" @set="onSetHiddenBar" />
@@ -27,26 +27,33 @@
 <script>
 import ToolBar from './components/ToolBar/index'
 import SideBar from './components/SideBar/index'
-import CanvasBar from './components/CanvasBar/index'
+// import CanvasBar from './components/CanvasBar/index'
 import HiddenBar from './components/HiddenBar/index'
 import PropertyBar from './components/PropertyBar/index'
+import Previewer from './components/Preview/pc'
+
+import { configs, getConfig } from './config'
 
 export default {
   name: 'App',
   components: {
     ToolBar,
     SideBar,
-    CanvasBar,
+    // CanvasBar,
     HiddenBar,
-    PropertyBar
+    PropertyBar,
+    Previewer
   },
   data() {
     return {
       hiddenStatus: false,
+      configs,
       cavasList: {}
     }
   },
-  mounted() {},
+  mounted() {
+    console.log(getConfig('el-select'))
+  },
   methods: {
     onSetToolBar(toolObj) {
       if (toolObj.action === 'pc') {

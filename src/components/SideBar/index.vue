@@ -13,7 +13,7 @@
       </div>
       <div v-else-if="selectComponent==='component'" class="sidebar-component">
         <div class="sidebar-name">组件库</div>
-        <ComponentLibrary @set="onSetComponent" />
+        <ComponentLibrary :configs="configs" @set="onSetComponent" />
       </div>
       <div v-else-if="selectComponent==='datasource'" class="sidebar-component">
         <div class="sidebar-name">数据库</div>
@@ -44,6 +44,10 @@ export default {
     msg: {
       type: String,
       default: 'chart'
+    },
+    configs: {
+      type: Array,
+      default: () => []
     }
   },
   data() {
