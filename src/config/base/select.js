@@ -1,3 +1,4 @@
+
 // 选择器
 export default {
   __config__: {
@@ -29,5 +30,7 @@ export default {
   clearable: true,
   disabled: false,
   filterable: false,
-  multiple: false
+  multiple: false,
+
+  component: 'CSelect'
 }

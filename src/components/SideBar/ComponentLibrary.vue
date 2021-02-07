@@ -25,7 +25,7 @@
       <div v-for="config in configs" :key="config.type" class="component-library-items">
         <div class="title">{{ config.name }}</div>
         <div class="items-content">
-          <div v-for="item in config.configs" :key="item.tag" class="items">
+          <div v-for="item in config.configs" :key="item.__config__.tag" class="items" @click="addComponent(item)">
             <div class="element">{{ item.__config__.label }}</div>
           </div>
         </div>
@@ -66,6 +66,9 @@ export default {
         e.dataTransfer.setData('my-info', infoJson)
         // this.$emit('set', JSON.parse(infoJson))
       }
+    },
+    addComponent(config) {
+      this.$emit('addComponent', config)
     }
   }
 }

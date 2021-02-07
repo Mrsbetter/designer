@@ -5,11 +5,11 @@
     </div>
     <div class="design-layout">
       <div class="design-left design-ft">
-        <SideBar ref="_sidebar" :configs="configs" @set="onSetSideBar" />
+        <SideBar ref="_sidebar" :configs="configs" @set="onSetSideBar" @addComponent="addComponent" />
       </div>
       <div :class="['design-center design-ft', {'hidden-active': hiddenStatus}]">
         <div class="design-canvas">
-          <Previewer ref="_canvasbar" :list="cavasList" @set="onSetCanvasBar" />
+          <Previewer ref="_canvasbar" :components="components" @set="onSetCanvasBar" />
         </div>
         <div class="design-hidden">
           <HiddenBar ref="_hiddenbar" @set="onSetHiddenBar" />
@@ -48,7 +48,8 @@ export default {
     return {
       hiddenStatus: false,
       configs,
-      cavasList: {}
+      cavasList: {},
+      components: []
     }
   },
   mounted() {
@@ -98,6 +99,10 @@ export default {
     },
     onSetPropertyBar(propertyObj) {
       console.log('sdfdsf', propertyObj)
+    },
+    addComponent(config) {
+      console.log(config)
+      this.components.push(getConfig(config.__config__.tag))
     }
   }
 }

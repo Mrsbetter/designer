@@ -1,6 +1,8 @@
 import commonConfig from './common'
 import baseConfigs from './base'
 
+let globalId = 100
+
 /**
  * 所有组件配置, 用于侧边栏展示
  */
@@ -19,6 +21,7 @@ export const configs = [
 export const getConfig = (tag) => {
   const baseConfig = { ...baseConfigs[tag] }
   return {
+    __vModel__: globalId++,
     ... Object.keys(commonConfig).reduce((prev, curr) => {
       const extendConfig = baseConfig[curr]
 

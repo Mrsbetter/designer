@@ -13,7 +13,7 @@
       </div>
       <div v-else-if="selectComponent==='component'" class="sidebar-component">
         <div class="sidebar-name">组件库</div>
-        <ComponentLibrary :configs="configs" @set="onSetComponent" />
+        <ComponentLibrary :configs="configs" @set="onSetComponent" @addComponent="addComponent" />
       </div>
       <div v-else-if="selectComponent==='datasource'" class="sidebar-component">
         <div class="sidebar-name">数据库</div>
@@ -62,6 +62,9 @@ export default {
     },
     onSetComponent(info) {
       this.$emit('set', { type: 'setComponent', list: info })
+    },
+    addComponent(config) {
+      this.$emit('addComponent', config)
     }
   }
 }
